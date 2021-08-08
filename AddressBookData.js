@@ -1,4 +1,4 @@
-//UC2
+//UC3
 class Contact {
   
 
@@ -13,7 +13,7 @@ class Contact {
       this.email = params[7];
     }
 
-    /*
+     /*
     *Purpose:Validating all the Conatct using regex pattern and test usind .test method
      */
     get firstName() {return this._firstName;}
@@ -83,11 +83,20 @@ class Contact {
   
     toString() {
       return "\nContact[\nFirstName = "+ this.firstName +"\nLastName = "+this.lastName+"\nAddress = "+this.address+"\nCity ="+this.city+
-         "\nState = "+this.state+"\nZip= "+this.zip+"\nPhoneNumber="+this.phoneNumber+"\nEmail="+this.email+"\n]";
+         "\nState = "+this.state+"\nZip = "+this.zip+"\nPhoneNumber="+this.phoneNumber+"\nEmail = "+this.email+"\n]";
     }
   }
-    /*
-    *passing values in the addressbook
-     */  
+  /*
+  *Purpose:create one Array and push the contacts in it
+  *passing calues in the constructor
+   */
+  let addressbook = new Array();
   let contact=new Contact("Pranav","Dani","ABCDda",'Pune','Maharastra','789526','91 8987898789','abc@gmail.com');
-  console.log(contact)
+  addressbook.push(contact.toString())
+  
+  let contact1=new Contact("Abcd","Abc","CCCCC",'Delhi','Delhi','841904',"91 1111111111",'aaa@gmail.com');
+  addressbook.push(contact1.toString())
+  
+  console.log("Addressbook : "+addressbook)
+  
+  
