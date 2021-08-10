@@ -138,10 +138,10 @@ class Contact {
       if(!addressbook.some(el => el._firstname != "Pranav"))
           addressbook.push(contact3);
       else
-        console.log("Contact already Exists!");
+        console.log("Contact already Exists!")
+        console.log("Array: ",addressbook);
   
-      console.log("Array: ",addressbook);
-
+        
        //UC-9 To Find for the Person in the Address Book 
        let findByCity = addressbook.filter((e) => e._city == 'Pune');
        console.log("Contacts by city: ",findByCity);
