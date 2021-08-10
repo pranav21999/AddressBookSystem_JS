@@ -122,3 +122,22 @@ class Contact {
     console.log(addressbook.find(findFirstName))
 
      
+     /*
+     UC-6 delete contact fro  addressbook
+    using filter and arrow function
+    */
+    addressbook = addressbook.filter((e) => e._firstName != 'ABC');
+    console.log("Array After Deleting Contact: ",addressbook);
+
+  //UC-7 To find the Number of contacts in the array
+  let numberOfContacts = addressbook.length;
+  console.log("Number of Contacts are: "+numberOfContacts);
+      /*UC8 To prevent duplicate entry in the Array
+      */      
+      let contact3 = new Contact('Pranav', 'Laaa', 'OSosoo', 'Pune', 'MH', '411091', '91 9111111111', 'swaraj@gmail.com')
+      if(!addressbook.some(el => el._firstname != "Pranav"))
+          addressbook.push(contact3);
+      else
+        console.log("Contact already Exists!");
+  
+      console.log("Array: ",addressbook);
