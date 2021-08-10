@@ -100,7 +100,7 @@ class Contact {
     let addressbook = new Array();
     try
     {
-      let contact1 = new Contact('Pranav', 'Dani', 'AAAAAAAAA', 'MMMMM', 'MH', '402107', '91 7799999999', 'mark@gmail.com')
+      let contact1 = new Contact('Pranav', 'Dani', 'Abc', 'Pune', 'MH', '402107', '91 7799999999', 'mark@gmail.com')
       let contact2 = new Contact('Abc', 'Lu', 'NNNN', 'PPPP', 'MH', '400107', '91 9898989898', 'abc@gmail.com')
       addressbook.push(contact1);
       addressbook.push(contact2);
@@ -138,6 +138,13 @@ class Contact {
       if(!addressbook.some(el => el._firstname != "Pranav"))
           addressbook.push(contact3);
       else
-        console.log("Contact already Exists!");
+        console.log("Contact already Exists!")
+        console.log("Array: ",addressbook);
   
-      console.log("Array: ",addressbook);
+        
+       //UC-9 To Find for the Person in the Address Book 
+       let findByCity = addressbook.filter((e) => e._city == 'Pune');
+       console.log("Contacts by city: ",findByCity);
+     
+      
+     
