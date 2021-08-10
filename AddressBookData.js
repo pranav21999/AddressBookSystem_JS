@@ -113,17 +113,12 @@ class Contact {
     console.log("\nAddressbook")
     console.log(addressbook);
 
-    //UC4-Find person by contact
-    //creating a function to find contact by name and passing contact as a parameter
+    /*UC6-Find person by contact
+    creating a function to find contact by name and passing contact as a parameter*/
     function findFirstName(contact)
     {
         return contact.firstName.includes("Mark")
     }
     console.log(addressbook.find(findFirstName))
 
-     //UC-5 delete contact fro  addressbook
-    //using filter and arrow function
-    addressbook = addressbook.filter((e) => e._firstName != 'ABC');
-    console.log("Array After Deleting Contact: ",addressbook);
-
-
+     
