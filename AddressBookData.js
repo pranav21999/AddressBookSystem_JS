@@ -1,6 +1,6 @@
-//UC6
+
 class Contact {
-  /*
+  
     firstName;
     lastName;
     address;
@@ -10,7 +10,6 @@ class Contact {
     phoneNumber;
     email;*/
     phoneNumber;
-   //creating a constructor using var args
     constructor(...params) {
       this.firstName = params[0];
       this.lastName = params[1];
@@ -92,9 +91,6 @@ class Contact {
       }
   }
   
- /* let contact=new Contact("Pranav","Dani","Akkkkkkkkkk",'MMM','MH','402117','91 7828626888','aaa@gmail.com');
-  console.log(contact.toString());
- */
     //UC3-Ability to create new addressbook array and add contact to it
     //creating a new array
     let addressbook = new Array();
